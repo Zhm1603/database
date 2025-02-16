@@ -23,7 +23,7 @@ pool.query('SELECT NOW()', (err, res) => {
   }
 });
 
-app.use('/api', userRoutes); 
+app.use(userRoutes); 
 
 const PORT = process.env.PORT || 3006;
 app.listen(PORT, () => {
