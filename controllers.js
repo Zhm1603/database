@@ -1,6 +1,5 @@
 import pool from './db.js';
 
-console.log('POOL INSTANCE:', pool); // Добавьте эту строку
 
 export const getAllUsers = async (req, res) => {
   try {
