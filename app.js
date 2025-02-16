@@ -6,14 +6,7 @@ import userRoutes from './index.js';
 const app = express();
 
 app.use(json());
-const cors = require("cors");
 
-app.use(cors({
-    origin: "*",  
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"], 
-    credentials: true,
-}));
 
 pool.query('SELECT NOW()', (err, res) => {
   if (err) {
